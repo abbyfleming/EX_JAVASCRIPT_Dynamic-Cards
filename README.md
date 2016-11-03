@@ -1,3 +1,2 @@
-Still in Progress:<br>
-Add Delete Btn to new div<br>
-Add Event Listener & Delete<br>
+NSS Front End Exercise<br>
+Dynamic Cards<br>
