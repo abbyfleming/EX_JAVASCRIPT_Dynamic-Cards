@@ -12,26 +12,23 @@ function createCard(){
 	var newDIV = document.createElement("DIV");
 	newDIV.className += 'card';
 	
-	//create the delete btn and add the text delete to it.
+	//create the delete btn, add the text delete to it, add event listener
 	var deleteBtn = document.createElement("button");        
 	deleteBtn.textContent = "Delete";  
+	deleteBtn.className += 'button';
+	deleteBtn.addEventListener("click", btntest);
 
 	//add the userinput into the new div and output it to the dom
-	newDIV.innerHTML = userInput.value + " (a button here??)";
+	newDIV.innerHTML = userInput.value;
+	newDIV.appendChild(deleteBtn);
 	output.appendChild(newDIV);
 
 	console.log("output", output); 
 }
 
-// function createDeleteBtn() {
-// 	var deleteBtn = document.createElement("button");        
-// 	deleteBtn.textContent = "Delete";     
-// 	output.appendChild(deleteBtn).addEventListener("click", btntest);
-// }
-
-// function btntest(){
-// 	console.log("button test");
-// }
+function btntest(){
+	console.log("button test");
+}
 
 createBtn.addEventListener("click", createCard);
 
